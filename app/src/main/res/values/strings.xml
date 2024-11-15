@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Stok</string>
+    <string name="n_o_tem_senha_cadastre_se">Não tem senha? Cadastre-se</string>
+    <string name="entrar">Entrar</string>
+    <string name="esqueceu_sua_senha">Esqueceu sua senha?</string>
+    <string name="insira_sua_senha">Insira sua senha</string>
+    <string name="insira_seu_email">Insira seu Email</string>
+    <string name="stok">Stok</string>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".CriarUsuarioActivity">
+
+    <TextView
+        android:id="@+id/txtCriarUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:layout_marginBottom="50sp"
+        android:fontFamily="@font/bebasneueregular"
+        android:shadowColor="@color/black"
+        android:text="@string/stok"
+        android:textColor="#F99E4C"
+        android:textSize="100sp" />
+
+    <TextView
+        android:id="@+id/txtNomeCriarUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="30sp"
+        android:layout_below="@id/txtCriarUsuario"
+        android:text="Crie sua conta"
+        android:textSize="40sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtCriarNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNomeCriarUsuario"
+        android:layout_centerInParent="true"
+        android:hint="Insira seu nome"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/baseline_people">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLength="50"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtCriarEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCriarNome"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"
+        android:hint="@string/insira_seu_email"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/baseline_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCriarEmail"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10sp"
+        android:hint="@string/insira_sua_senha"
+        app:endIconMode="password_toggle"
+        app:startIconDrawable="@drawable/baseline_lock">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCriarUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSenha"
+        android:layout_marginTop="50sp"
+        android:padding="10sp"
+        android:text="Criar usuário"
+        android:textSize="20sp"
+        app:cornerRadius="1dp" />
+
+</RelativeLayout>
