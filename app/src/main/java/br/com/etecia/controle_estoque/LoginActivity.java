@@ -14,7 +14,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class LoginActivity extends AppCompatActivity {
-    TextView txtCadastre;
+    TextView txtCadastre, txtRecuperarSenha;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +28,20 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         txtCadastre = findViewById(R.id.txtCadastre);
+        txtRecuperarSenha =  findViewById(R.id.txtRecuperarSenha);
 
         txtCadastre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),CriarUsuarioActivity.class));
                 finish();
+            }
+        });
+
+        txtRecuperarSenha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),));
             }
         });
 
