@@ -1,10 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
     tools:context=".EsqueceuSenhaActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imgReturnEsqueceuSenha"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/baseline_arrow_back_ios" />
+
+    <TextView
+        android:id="@+id/txtEsqueceuSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100sp"
+        android:layout_marginBottom="50sp"
+        android:fontFamily="@font/bebasneueregular"
+        android:shadowColor="@color/black"
+        android:text="@string/stok"
+        android:textColor="#F99E4C"
+        android:textSize="100sp" />
+
+    <TextView
+        android:id="@+id/txtTituloEsqueceuSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEsqueceuSenha"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="30sp"
+        android:text="Esqueceu sua senha"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/txtEsqueceuSenhaInforma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTituloEsqueceuSenha"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="30sp"
+        android:textAlignment="center"
+        android:text="@string/recupera_titulo"
+        android:textSize="15sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtRecuperarSenhaEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEsqueceuSenhaInforma"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"
+        android:hint="@string/insira_seu_email"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/baseline_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRecuperaSenhaEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRecuperarSenhaEmail"
+        android:layout_marginTop="50sp"
+        android:padding="10sp"
+        android:text="Enviar"
+        android:textSize="20sp"
+        app:cornerRadius="1dp" />
+
+</RelativeLayout>

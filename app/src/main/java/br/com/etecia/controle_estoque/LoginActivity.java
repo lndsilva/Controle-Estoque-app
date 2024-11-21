@@ -28,12 +28,12 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         txtCadastre = findViewById(R.id.txtCadastre);
-        txtRecuperarSenha =  findViewById(R.id.txtRecuperarSenha);
+        txtRecuperarSenha = findViewById(R.id.txtRecuperarSenha);
 
         txtCadastre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),CriarUsuarioActivity.class));
+                startActivity(new Intent(getApplicationContext(), CriarUsuarioActivity.class));
                 finish();
             }
         });
@@ -41,7 +41,8 @@ public class LoginActivity extends AppCompatActivity {
         txtRecuperarSenha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),));
+                startActivity(new Intent(getApplicationContext(), EsqueceuSenhaActivity.class));
+                finish();
             }
         });
 
