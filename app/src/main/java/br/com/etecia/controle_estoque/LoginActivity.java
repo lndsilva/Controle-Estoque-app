@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,6 +16,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class LoginActivity extends AppCompatActivity {
     TextView txtCadastre, txtRecuperarSenha;
+    Button btnEntrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,15 @@ public class LoginActivity extends AppCompatActivity {
 
         txtCadastre = findViewById(R.id.txtCadastre);
         txtRecuperarSenha = findViewById(R.id.txtRecuperarSenha);
+        btnEntrar = findViewById(R.id.btnEntrar);
+
+        btnEntrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), DashBoardActivity.class));
+                finish();
+            }
+        });
 
         txtCadastre.setOnClickListener(new View.OnClickListener() {
             @Override
