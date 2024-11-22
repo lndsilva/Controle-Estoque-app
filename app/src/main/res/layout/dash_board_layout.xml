@@ -14,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5sp"
         android:layout_marginBottom="30sp"
-        android:text="Crie sua conta"
+        android:text="Dashboard"
         android:textColor="#F99E4C"
         android:textSize="40sp"
         android:textStyle="bold" />
@@ -178,6 +178,108 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="10dp"
                 android:text="Fornecedores"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/idCardDashEntradas"
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/idCardDashFornecedores"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/idCardDashVendas"
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:src="@drawable/logo_estoque" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="Entradas"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/idCardDashSaidas"
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/idCardDashEntradas"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/idCardDashClientes"
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:src="@drawable/logo_estoque" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="Saídas"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/idCardDashEtiquetas"
+        android:layout_width="150dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/idCardDashSaidas"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/idCardDashRelatorios"
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:src="@drawable/logo_estoque" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="Etiquetas"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
