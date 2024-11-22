@@ -42,7 +42,7 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="10dp"
-                android:src="@drawable/logo_estoque" />
+                android:src="@drawable/produtos" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -80,7 +80,7 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="10dp"
-                android:src="@drawable/logo_estoque" />
+                android:src="@drawable/vendas" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -118,7 +118,7 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="10dp"
-                android:src="@drawable/logo_estoque" />
+                android:src="@drawable/clientes" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -156,7 +156,7 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="10dp"
-                android:src="@drawable/logo_estoque" />
+                android:src="@drawable/relatorios" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -195,7 +195,7 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="10dp"
-                android:src="@drawable/logo_estoque" />
+                android:src="@drawable/fornecedores" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -234,7 +234,7 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="10dp"
-                android:src="@drawable/logo_estoque" />
+                android:src="@drawable/entrada" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -273,7 +273,7 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="10dp"
-                android:src="@drawable/logo_estoque" />
+                android:src="@drawable/saida" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -312,7 +312,7 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="10dp"
-                android:src="@drawable/logo_estoque" />
+                android:src="@drawable/etiqueta" />
 
             <TextView
                 android:layout_width="wrap_content"
