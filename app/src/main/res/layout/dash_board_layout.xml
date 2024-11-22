@@ -21,11 +21,16 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/idCardDashProdutos"
-        android:layout_width="150dp"
+        android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_below="@+id/txtTituloDashboard"
-        android:layout_margin="10dp"
-        android:clickable="true">
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -54,11 +59,16 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/idCardDashVendas"
-        android:layout_width="150dp"
+        android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_below="@+id/idCardDashProdutos"
-        android:layout_margin="10dp"
-        android:clickable="true">
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -87,10 +97,15 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/idCardDashClientes"
-        android:layout_width="150dp"
+        android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_below="@+id/idCardDashVendas"
-        android:layout_margin="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true">
 
         <LinearLayout
@@ -120,10 +135,15 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/idCardDashRelatorios"
-        android:layout_width="150dp"
+        android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_below="@+id/idCardDashClientes"
-        android:layout_margin="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true">
 
         <LinearLayout
@@ -153,11 +173,16 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/idCardDashFornecedores"
-        android:layout_width="150dp"
+        android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_below="@+id/txtTituloDashboard"
-        android:layout_margin="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
         android:layout_toRightOf="@+id/idCardDashProdutos"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true">
 
         <LinearLayout
@@ -187,11 +212,16 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/idCardDashEntradas"
-        android:layout_width="150dp"
+        android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_below="@+id/idCardDashFornecedores"
-        android:layout_margin="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
         android:layout_toRightOf="@+id/idCardDashVendas"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true">
 
         <LinearLayout
@@ -221,11 +251,16 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/idCardDashSaidas"
-        android:layout_width="150dp"
+        android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_below="@+id/idCardDashEntradas"
-        android:layout_margin="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
         android:layout_toRightOf="@+id/idCardDashClientes"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true">
 
         <LinearLayout
@@ -255,11 +290,16 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/idCardDashEtiquetas"
-        android:layout_width="150dp"
+        android:layout_width="180dp"
         android:layout_height="180dp"
         android:layout_below="@+id/idCardDashSaidas"
-        android:layout_margin="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
         android:layout_toRightOf="@+id/idCardDashRelatorios"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         android:clickable="true">
 
         <LinearLayout
